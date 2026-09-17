@@ -120,7 +120,8 @@ export default function CanvasViewer({ progress, xOffsetPercent }: CanvasViewerP
       const navPadding = 80;
       const drawAreaH = canvasH - navPadding;
       
-      const scale = Math.min(canvasW / imgW, drawAreaH / imgH);
+      // Make image act like object-fit: cover, but ensure it is slightly wider than canvas to allow the 4% left-pan without showing edges
+      const scale = Math.max((canvasW * 1.08) / imgW, drawAreaH / imgH);
       
       const offsetPercent = xOffsetPercent ? xOffsetPercent.get() : 0;
       const additionalX = (canvasW * (offsetPercent / 100));
