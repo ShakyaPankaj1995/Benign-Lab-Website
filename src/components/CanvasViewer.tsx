@@ -38,7 +38,7 @@ export default function CanvasViewer({ progress, xOffsetPercent }: CanvasViewerP
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       const img = new Image();
       const frameNum = String(i).padStart(4, "0");
-      img.src = `/sequence/frame_${frameNum}.png`;
+      img.src = `/Benign-Lab-Website/sequence/frame_${frameNum}.png`;
       img.onload = () => {
         loaded++;
         setLoadedFrames(loaded);
