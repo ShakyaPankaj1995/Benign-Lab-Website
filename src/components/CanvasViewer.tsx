@@ -48,7 +48,7 @@ export default function CanvasViewer({ progress, xOffsetPercent }: CanvasViewerP
       };
       
       // Start loading
-      img.src = `/Benign-Lab-Website/sequence/frame_${frameNum}.png`;
+      img.src = `/sequence/frame_${frameNum}.png`;
       images.push(img);
     }
     
