@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: 212 210 211; /* #d4d2d3 */
+  --bg-gradient: rgb(212, 210, 211);
+  --bg: #FFFFFF;
+  --bg-alt: #F5F8F8;
+  --ink: #1F2A37;
+  --muted: #64748B;
+  --line: #E6EBEF;
+  --teal: #3E8E7C;
+  --teal-ink: #2F7D6B;
+  --teal-soft: #D8F0E5;
+  --red: #DA2C43;
+}
+
+body {
+  color: var(--ink);
+  background: var(--bg-gradient);
+}

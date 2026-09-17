@@ -1,0 +1,39 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.npm_cache/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can be uncommented if needed)
+# .env*.local
+
+# vercel
+.vercel
+
+# raw videos
+/new video 1/
+/new video 2/
+/new video 3/
+/Pad explosion /
+/copy_720_frames.sh
+/all_files.txt
